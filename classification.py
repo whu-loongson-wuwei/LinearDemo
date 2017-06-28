@@ -62,7 +62,7 @@ def main():
     global point
     point, = ax.plot([], [], 'yo', ms=15)
     fig.canvas.mpl_connect('button_press_event', onClick)
-    anim = FuncAnimation(fig, update, frames=pla, interval=2000, repeat=False)
+    anim = FuncAnimation(fig, update, frames=pla, interval=1000, repeat=False)
     plt.show()
 
 if __name__ == '__main__':
